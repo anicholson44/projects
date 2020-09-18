@@ -6,4 +6,4 @@ attributes :id,
   :phase_actual_end_date,
   :budget,
   :final_estimate_of_actual_costs,
-  :total_phase_actual_spendin
+  :total_phase_actual_spending
