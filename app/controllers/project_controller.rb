@@ -6,6 +6,12 @@ class ProjectController < ApplicationController
   end
 
   def update
+    @project = Project.find(params[:id])
+    if @project.update(update_params)
+      render :update
+    else
+      render :update, status: :unprocessable_entity
+    end
   end
 
   private def filter_params
@@ -17,5 +23,12 @@ class ProjectController < ApplicationController
       :final_estimate_of_actual_costs,
       :total_phase_actual_spending
     ).to_h
+  end
+
+  private def update_params
+    params.permit(
+      :phase_actual_start_date,
+      :total_phase_actual_spending
+    )
   end
 end

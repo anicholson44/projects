@@ -1,4 +1,5 @@
 collection @projects, object_root: false
+
 attributes :id,
   :school_name,
   :description,
