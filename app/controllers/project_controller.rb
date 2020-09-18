@@ -1,6 +1,6 @@
 class ProjectController < ApplicationController
   def index
-
+    @projects = Project.search(params[:search])
   end
 
   def update
