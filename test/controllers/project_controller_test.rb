@@ -20,11 +20,19 @@ class ProjectControllerTest < ActiveSupport::TestCase
     assert_equal(['I.S. 254 - BRONX test search string', 'I.S. 254 - BRONX'], JSON.parse(response.body).map {|p| p['school_name'] })
   end
 
-  test "index should filter on Project Phase Actual Start Date" do
-    get project_index_url(phase_actual_start_date: '07/07/2016')
+  test "index should filter on filterable params" do
+    project = Project.first
+    get project_index_url(
+      phase_actual_start_date: project.phase_actual_start_date,
+      phase_planned_end_date: project.phase_planned_end_date,
+      phase_actual_end_date: project.phase_actual_end_date,
+      budget: project.budget,
+      final_estimate_of_actual_costs: project.final_estimate_of_actual_costs,
+      total_phase_actual_spending: project.total_phase_actual_spending,
+    )
     assert_response :success
 
-    assert_equal(['I.S. 254 - BRONX test search string', 'I.S. 254 - BRONX', "DEWITT CLINTON HS - X", "DEWITT CLINTON HS - X", "P.S. 14 - BRONX", "P.S. 14 - BRONX", "P.S. 130 - MANHATTAN", "MULTICULTURAL HS - BROOKLYN"], JSON.parse(response.body).map {|p| p['school_name'] })
+    assert_equal([project.id], JSON.parse(response.body).map { |p| p['id'] })
   end
 
   test "should update phase_actual_start_date and total_phase_actual_spending" do
