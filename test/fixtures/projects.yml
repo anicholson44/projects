@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school_name: MyString
+  description: MyString
+  phase_actual_start_date: 2020-09-18
+  phase_planned_end_date: 2020-09-18
+  phase_actual_end_date: 2020-09-18
+  budget: 1.5
+  final_estimate_of_actual_costs: 1.5
+  total_phase_actual_spending: 1.5
+
+two:
+  school_name: MyString
+  description: MyString
+  phase_actual_start_date: 2020-09-18
+  phase_planned_end_date: 2020-09-18
+  phase_actual_end_date: 2020-09-18
+  budget: 1.5
+  final_estimate_of_actual_costs: 1.5
+  total_phase_actual_spending: 1.5
