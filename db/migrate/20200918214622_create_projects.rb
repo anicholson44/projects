@@ -12,7 +12,13 @@ class CreateProjects < ActiveRecord::Migration[6.0]
 
       t.index :school_name
       t.index :description
-      
+      t.index :phase_actual_start_date
+      t.index :phase_planned_end_date
+      t.index :phase_actual_end_date
+      t.index :budget
+      t.index :final_estimate_of_actual_costs
+      t.index :total_phase_actual_spending
+
       t.timestamps
     end
   end

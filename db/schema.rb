@@ -26,8 +26,14 @@ ActiveRecord::Schema.define(version: 2020_09_18_214622) do
     t.float "total_phase_actual_spending"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["budget"], name: "index_projects_on_budget"
     t.index ["description"], name: "index_projects_on_description"
+    t.index ["final_estimate_of_actual_costs"], name: "index_projects_on_final_estimate_of_actual_costs"
+    t.index ["phase_actual_end_date"], name: "index_projects_on_phase_actual_end_date"
+    t.index ["phase_actual_start_date"], name: "index_projects_on_phase_actual_start_date"
+    t.index ["phase_planned_end_date"], name: "index_projects_on_phase_planned_end_date"
     t.index ["school_name"], name: "index_projects_on_school_name"
+    t.index ["total_phase_actual_spending"], name: "index_projects_on_total_phase_actual_spending"
   end
 
 end
