@@ -1,21 +1,111 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  school_name: MyString
-  description: MyString
-  phase_actual_start_date: 2020-09-18
-  phase_planned_end_date: 2020-09-18
-  phase_actual_end_date: 2020-09-18
-  budget: 1.5
-  final_estimate_of_actual_costs: 1.5
-  total_phase_actual_spending: 1.5
-
+  school_name: I.S. 254 - BRONX
+  description: FACADE/ROOFS
+  phase_actual_start_date: 07/07/2016
+  phase_planned_end_date: 03/28/2018
+  phase_actual_end_date: ''
+  budget: '4050000'
+  final_estimate_of_actual_costs: 4229193
+  total_phase_actual_spending: 3791127
 two:
-  school_name: MyString
-  description: MyString
-  phase_actual_start_date: 2020-09-18
-  phase_planned_end_date: 2020-09-18
-  phase_actual_end_date: 2020-09-18
-  budget: 1.5
-  final_estimate_of_actual_costs: 1.5
-  total_phase_actual_spending: 1.5
+  school_name: I.S. 254 - BRONX
+  description: FACADE/ROOFS
+  phase_actual_start_date: 07/07/2016
+  phase_planned_end_date: 03/28/2018
+  phase_actual_end_date: ''
+  budget: '252000'
+  final_estimate_of_actual_costs: 489326
+  total_phase_actual_spending: 485620
+three:
+  school_name: I.S. 254 - BRONX
+  description: FY16 RESO A IP SURVEILLANCE CAMERA INSTALLATION
+  phase_actual_start_date: 07/27/2017
+  phase_planned_end_date: 11/27/2017
+  phase_actual_end_date: 08/03/2017
+  budget: '0'
+  final_estimate_of_actual_costs: 1792
+  total_phase_actual_spending: 1792
+four:
+  school_name: I.S. 254 - BRONX
+  description: FY16 RESO A IP SURVEILLANCE CAMERA INSTALLATION
+  phase_actual_start_date: 08/04/2017
+  phase_planned_end_date: 02/05/2018
+  phase_actual_end_date: ''
+  budget: '19110'
+  final_estimate_of_actual_costs: 17318
+  total_phase_actual_spending: 7169
+five:
+  school_name: I.S. 254 - BRONX
+  description: FY16 RESO A IP SURVEILLANCE CAMERA INSTALLATION
+  phase_actual_start_date: PNS
+  phase_planned_end_date: PNS
+  phase_actual_end_date: PNS
+  budget: '280280'
+  final_estimate_of_actual_costs: 280280
+  total_phase_actual_spending: 951
+six:
+  school_name: I.S. 254 - BRONX
+  description: FY16 RESO A IP SURVEILLANCE CAMERA INSTALLATION
+  phase_actual_start_date: PNS
+  phase_planned_end_date: PNS
+  phase_actual_end_date: PNS
+  budget: '69238'
+  final_estimate_of_actual_costs: 52551
+  total_phase_actual_spending: 2423
+seven:
+  school_name: I.S. 254 - BRONX
+  description: FY17 RESO A TECHNOLOGY
+  phase_actual_start_date: 05/15/2017
+  phase_planned_end_date: 01/15/2018
+  phase_actual_end_date: 09/14/2017
+  budget: '50000'
+  final_estimate_of_actual_costs: 49625
+  total_phase_actual_spending: 49625
+eight:
+  school_name: I.S. 254 - BRONX
+  description: FY17 RESO A TECHNOLOGY
+  phase_actual_start_date: 05/15/2017
+  phase_planned_end_date: 01/15/2018
+  phase_actual_end_date: 09/14/2017
+  budget: '76250'
+  final_estimate_of_actual_costs: 75677
+  total_phase_actual_spending: 75677
+nine:
+  school_name: P.S. 279 - BRONX
+  description: WATER PENETRATION/ROOFS
+  phase_actual_start_date: 08/02/2016
+  phase_planned_end_date: 12/19/2016
+  phase_actual_end_date: 02/13/2017
+  budget: '36881'
+  final_estimate_of_actual_costs: 57074
+  total_phase_actual_spending: 56288
+ten:
+  school_name: P.S. 279 - BRONX
+  description: WATER PENETRATION/ROOFS
+  phase_actual_start_date: 05/15/2017
+  phase_planned_end_date: 10/16/2017
+  phase_actual_end_date: 12/18/2017
+  budget: '141246'
+  final_estimate_of_actual_costs: 183396
+  total_phase_actual_spending: 180358
+eleven:
+  school_name: P.S. 279 - BRONX
+  description: WATER PENETRATION/ROOFS
+  phase_actual_start_date: PNS
+  phase_planned_end_date: PNS
+  phase_actual_end_date: PNS
+  budget: '2085039'
+  final_estimate_of_actual_costs: 2085039
+  total_phase_actual_spending: 1718
+twelve:
+  school_name: P.S. 279 - BRONX
+  description: WATER PENETRATION/ROOFS
+  phase_actual_start_date: PNS
+  phase_planned_end_date: PNS
+  phase_actual_end_date: PNS
+  budget: '253705'
+  final_estimate_of_actual_costs: 253705
+  total_phase_actual_spending: 7119
+ 
