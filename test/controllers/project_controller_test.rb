@@ -50,4 +50,16 @@ class ProjectControllerTest < ActiveSupport::TestCase
     assert_equal((project.phase_actual_start_date + 1.day).to_s, response_project['phase_actual_start_date'])
     assert_equal(project.total_phase_actual_spending + 100000000, response_project['total_phase_actual_spending'])
   end
+
+  test "should paginate" do
+    get project_index_url(per_page: 100)
+    assert_response :success
+
+    projects = JSON.parse(response.body)
+    assert_equal(100, projects.length)
+
+    get project_index_url(page: 2, per_page: 99)
+    assert_response :success
+    assert_equal(projects.last['id'], JSON.parse(response.body).first['id'])
+  end
 end

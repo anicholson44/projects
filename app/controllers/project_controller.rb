@@ -3,6 +3,8 @@ class ProjectController < ApplicationController
     @projects = Project
       .search(params[:search])
       .where(filter_params)
+      .page(params[:page] || 1)
+      .per(params[:per_page] || 25)
   end
 
   def update
