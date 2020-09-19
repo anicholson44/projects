@@ -62,4 +62,11 @@ class ProjectControllerTest < ActiveSupport::TestCase
     assert_response :success
     assert_equal(projects.last['id'], JSON.parse(response.body).first['id'])
   end
+
+  test "should delete" do
+    delete project_url(Project.first)
+    assert_response :success
+
+    assert_empty(Project.where(id: JSON.parse(response.body)['project']['id']))
+  end
 end

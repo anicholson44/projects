@@ -16,6 +16,15 @@ class ProjectController < ApplicationController
     end
   end
 
+  def destroy
+    @project = Project.find(params[:id])
+    if @project.destroy
+      render :update
+    else
+      render :update, status: :unprocessable_entity
+    end
+  end
+
   private def filter_params
     params.permit(
       :phase_actual_start_date,
